@@ -10,6 +10,8 @@ import {
 import App from './components/App.jsx';
 import Contact from './components/Contact.jsx';
 import About from './components/About.jsx';
+import NaturalHabitat from './components/NaturalHabitat.jsx';
+import Destination from './components/Destination.jsx';
 // import linkedin from '../public/assets/Linkedin.png';
 
 export default class Routes extends Component {
@@ -20,25 +22,25 @@ export default class Routes extends Component {
       <Router>
         <div style={{ display: 'flex', height: '100%', flexDirection: 'column' }}>
           <div style={styles.top}>
+          <div style={{ marginLeft: 50 }}>
+            <img src={'https://i.imgur.com/WHgPMPV.jpg'} style={{ height: 90, width: 90, paddingLeft: 30 }} />
+          </div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <div style={{ marginLeft: 125 }}>
-                <img src={'https://i.imgur.com/WHgPMPV.jpg'} style={{ height: 80, width: 65 }} />
-              </div>
               <div style={styles.info}>
-                  <h2 style={{ color: '#ffeecc', marginBottom: 5 }}>
+                  <h2 style={{ color: '#fff2e6', marginBottom: 0, fontFamily: 'Trebuchet MS', fontSize: 40 }}>
                     Minwoo Kim
                   </h2>
-                  <h4 style={{ color: '#ffeecc', marginTop: 5 }}>
+                  <h4 style={{ color: '#fff2e6', marginTop: 0, fontFamily: 'Trebuchet MS' }}>
                     <i>Fullstack Software Engineer</i>
                   </h4>
               </div>
             </div>
             <div style={styles.contact}>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', marginRight: 50 }}>
-                <div>
+                <div style={{ color: '#fff2e6', fontFamily: 'Trebuchet MS' }}>
                   (734) 277-2590
                 </div>
-                <div>
+                <div style={{ color: '#fff2e6', fontFamily: 'Trebuchet MS' }}>
                   kminwoo0710@gmail.com
                 </div>
               </div>
@@ -52,19 +54,20 @@ export default class Routes extends Component {
           </div>
           <div style={styles.middle}>
             <div style={styles.navbar}>
-              <Link to='/' style={styles.button} replace>Home</Link>
-              <Link to='/about' style={styles.button} replace>About</Link>
+              <Link to='/' style={styles.button} replace><p style={{ fontFamily: 'Helvetica' }}>Home</p></Link>
+              <Link to='/about' style={styles.button} replace><p style={{ fontFamily: 'Helvetica' }}>About</p></Link>
               {/* <Link to='/projects' style={styles.button} replace>Projects</Link> */}
-              <Link to='/contact' style={styles.button} replace>Contact</Link>
+              {/* <Link to='/contact' style={styles.button} replace>Contact</Link> */}
             </div>
-          <div style={{ flex: 8, backgroundColor: '' }}>
+          <div style={{ flex: 8, paddingBottom: 30 }}>
           <Route exact path='/' component={App} />
-          <Route path='/contact' component={Contact} />
           <Route path='/about' component={About} />
+          <Route path='/naturalhabitat' component={NaturalHabitat} />
+          <Route path='/destination' component={Destination} />
           </div>
           </div>
           <div style={styles.bottom}>
-            <h4 style={{ color: '#ffeecc' }}>
+            <h4 style={{ color: '#fff2e6', fontFamily: 'Trebuchet MS' }}>
               Created using React by Minwoo Kim
             </h4>
           </div>
@@ -83,12 +86,12 @@ const styles = {
   top: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#003333',
+    backgroundColor: '#4b4b34',
     flex: 2
   },
   middle: {
     display: 'flex',
-    backgroundColor: '#ffe6b3'
+    backgroundColor: '#ffffff'
   },
   contact: {
     display: 'flex',
@@ -100,16 +103,18 @@ const styles = {
   navbar: {
     display: 'flex',
     flexDirection: 'column',
-    flex: 1,
-    alignItems: 'center',
-    marginTop: 30,
-    backgroundColor: 'red'
+    flex: 0.6,
+    backgroundColor: '#ddd',
+    paddingLeft: 30,
+    borderRightWidth: 5,
+    borderRightColor: 'black',
+    
   },
   button: {
     marginTop: 30
   },
   info: {
-    marginLeft: 10,
+    marginLeft: 20,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around'
@@ -119,6 +124,6 @@ const styles = {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#003333' 
+    backgroundColor: '#4b4b34' 
   }
 }

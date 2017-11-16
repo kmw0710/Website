@@ -1,52 +1,57 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default class EachProject extends Component {
   render() {
     return (
       <div style={styles.project}>
-        <div style={{ flex: 10, display: 'flex', flexDirection: 'row', marginTop: 30, justifyContent: 'space-between' }}>
-
-
-          <div style={{ flex: 8, backgroundColor: 'purple' }}>
-            <div>
-              <h4 style={{ textAlign: 'center' }}><i>{this.props.name}</i></h4>
-            </div>
+        <div style={{ display: 'flex', flexDirection: 'row', marginTop: 30 }}>
+          <div style={{ height: 300, width: 300, backgroundColor: 'purple' }}>
             {this.props.index === 0 ? (
               <div style={styles.picture}>
-                {/* <img src={'https://i.imgur.com/C84orUH.png'} style={styles.image} /> */}
-                <img src={'https://i.imgur.com/IiFPFqG.png'} style={styles.image} />
-                {/* <img src={'https://i.imgur.com/GZ5hePv.png'} style={styles.image} /> */}
+                <Link to='/naturalhabitat'>
+                  <img src={'https://i.imgur.com/IiFPFqG.png'} style={styles.image} />
+                </Link>
               </div>
             ) : this.props.index === 1 ? (
               <div style={styles.picture}>
-                <img src={'https://i.imgur.com/C84orUH.png'} style={styles.image} />
-                <img src={'https://i.imgur.com/IiFPFqG.png'} style={styles.image} />
-                <img src={'https://i.imgur.com/GZ5hePv.png'} style={styles.image} />
+                <Link to='/destination'>
+                  <img src={'https://i.imgur.com/4lDpy8M.png'} style={styles.image} />
+                </Link>
               </div>
             ) : null}
           </div>
           {this.props.index === 0 ? (
             <div style={styles.description}>
-              <ul>
-                <li>IOS/Andorid application using React-native</li>
-                <li>Authenticated Login/Signup with Facebook OAuth</li>
-                <li>Authenticated user’s data with OAuth2 to import personal schedules from Google Calendar</li>
-                <li>Integrated Firebase database to store personal picture taken from the mobile application</li>
-                <li>Incorporated D3 and Art library with React-Native to visualize user's data with dynamic animations</li>
-              </ul>
+              <div>
+                <h2 style={{ textAlign: 'center' }}><i>{this.props.name}</i></h2>
+              </div>
+              <Link to='/naturalhabitat'>
+                <ul>
+                  <h4>IOS/Android mobile application</h4>
+                  <h4>Native application using React</h4>
+                  <h4>Facebook authentication</h4>
+                  <h4>Google OAuth2 authentication</h4>
+                  <h4>React-Native, Expo, Express, Node, MySQL, Firebase</h4>
+                </ul>
+              </Link>
             </div>
           ) : this.props.index === 1 ? (
             <div style={styles.description}>
-            <ul>
-              <li>Integrated Google Maps API for accurate location, and provided clearer view of the entire travel</li>
-              <li> dest</li>
-              <li> destinat </li>
-            </ul>
+              <div>
+                <h2 style={{ textAlign: 'center' }}><i>{this.props.name}</i></h2>
+              </div>
+              <Link to='/naturalhabitat'>
+                <ul>
+                  <h4>Web browser based application</h4>
+                  <h4>JavaScript application using React</h4>
+                  <h4>Facebook Authentication</h4>
+                  <h4>GoogleMap RESTful API</h4>
+                  <h4>React, Express, Node, MongoDB</h4>
+                </ul>
+              </Link>
             </div>
           ) : null}
-
-
         </div>
       </div>
     )
@@ -58,26 +63,17 @@ const styles = {
   project: {
     display: 'flex',
     flexDirection: 'column',
-    height: 400,
-    width: 400,
-    backgroundColor: '#ffe6b3',
-    marginLeft: 30
-  },
-  picture: {
-    display: 'flex',
-    flexDirection: 'row',
-    flex: 6,
-    backgroundColor: 'yellow',
-    justifyContent: 'space-around',
-    alignItems: 'center'
+    backgroundColor: '#ffffff',
+    marginLeft: 250,
   },
   description: {
-    flex: 5,
-    backgroundColor: 'green',
-    marginRight: 100
+    backgroundColor: '#ddd',
+    marginLeft: 100,
+    height: 300,
+    width: 300
   },
   image: {
-    height: 160,
-    width: 140
+    height: 300,
+    width: '100%'
   }
 }

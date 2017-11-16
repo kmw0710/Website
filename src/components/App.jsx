@@ -20,37 +20,35 @@ export default class App extends Component {
 
   componentDidMount() {
     axios.get('https://talaikis.com/api/quotes/random/')
-    .then(result => {
-      let { author, quote } = result.data;
-      this.setState({ author, quote });
-    })    
+      .then(result => {
+        let { author, quote } = result.data;
+        this.setState({ author, quote });
+      })
   }
 
-  shouldComponentUpdate() {
-    return false;
-  }
 
   getDescription() {
- 
+
   }
 
-
   render() {
-    let random = ['red', 'blue', 'yellow', 'green', 'purple', 'brown', 'orange']
-    let randomColor = random[Math.floor(Math.random())]
     return (
+      <div style={{ marginBottom: 50 }}>
       <div>
-      {this.state.projects.map((ele, i) => {
-        return <EachProject key={i} name={ele} index={i} />
-      })}
-        
+        <h2 style={{ textAlign: 'center', paddingRight: 150, fontFamily: 'Trebuchet MS' }}>
+          PROJECTS
+          </h2>
+      </div>
+        {this.state.projects.map((ele, i) => {
+          return <EachProject key={i} name={ele} index={i} />
+        })}
         <div style={styles.quote}>
-          <h3 style={{ fontFamily: "Lucida Console" }}>
+          <h3 style={{ fontFamily: "Courier", color: '#1a3300' }}>
             <i>{this.state.author}</i>
           </h3>
-          <h2 style={{ fontFamily: 'Comic Sans MS' }}>
+          <h4 style={{ fontFamily: 'Courier', color: '#1a3300', fontSize: 20 }}>
             {this.state.quote}
-          </h2>
+          </h4>
         </div>
       </div>
     )
@@ -58,26 +56,16 @@ export default class App extends Component {
 }
 
 const styles = {
-  contact: {
-    display: 'flex',
-    flexDirection: 'column',
-    flex: 1,
-    backgroundColor: 'red',
-    alignItems: 'center',
-  },
-  button: {
-    marginTop: 30
-  },
   quote: {
     display: 'flex',
     height: 150,
-    backgroundColor: '#ffe6b3',
+    backgroundColor: '#ffffff',
     flexDirection: 'column',
     justifyContent: 'space-around',
     alignItems: 'center',
-    paddingRight: 100,
-    paddingLeft: 100,
-    paddingTop: 50,
-    paddingBottom: 50
+    paddingRight: 200,
+    paddingLeft: 150,
+    paddingTop: 30,
+    paddingBottom: 30
   }
 }
