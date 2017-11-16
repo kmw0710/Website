@@ -4,6 +4,8 @@ import { Button } from 'react-bootstrap';
 import { Swiper, Slide } from 'react-dynamic-swiper';
 // import 'react-dynamic-swiper/lib/styles.css';
 import axios from 'axios';
+import EachProject from './EachProject.jsx';
+
 
 export default class App extends Component {
   constructor(props) {
@@ -11,7 +13,8 @@ export default class App extends Component {
     this.state = {
       currentProject: 0,
       author: '',
-      quote: ''
+      quote: '',
+      projects: ['Natural Habitat', 'Destination']
     }
   }
 
@@ -20,7 +23,11 @@ export default class App extends Component {
     .then(result => {
       let { author, quote } = result.data;
       this.setState({ author, quote });
-    })
+    })    
+  }
+
+  shouldComponentUpdate() {
+    return false;
   }
 
   getDescription() {
@@ -29,26 +36,19 @@ export default class App extends Component {
 
 
   render() {
+    let random = ['red', 'blue', 'yellow', 'green', 'purple', 'brown', 'orange']
+    let randomColor = random[Math.floor(Math.random())]
     return (
       <div>
-        <div style={styles.div}>
-          <div style={{ flex: 10, display: 'flex', flexDirection: 'row', marginTop: 30, justifyContent: 'space-around' }}>
-          
-            <Link onClick={() => {this.getDescription()}} style={styles.projects} to='/home'>
-            </Link>
-            <div style={{ flex: 1, backgroundColor: 'orange', marginRight: 100 }}>
-            </div>
-          
-          </div>
-          <div style={styles.bottomDiv}>
-            <Button style={styles.button}><Link to='/home'>PROJECTS</Link></Button>
-          </div>
-        </div>
+      {this.state.projects.map((ele, i) => {
+        return <EachProject key={i} name={ele} index={i} />
+      })}
+        
         <div style={styles.quote}>
-          <h3>
-            {this.state.author}
+          <h3 style={{ fontFamily: "Lucida Console" }}>
+            <i>{this.state.author}</i>
           </h3>
-          <h2>
+          <h2 style={{ fontFamily: 'Comic Sans MS' }}>
             {this.state.quote}
           </h2>
         </div>
@@ -58,37 +58,26 @@ export default class App extends Component {
 }
 
 const styles = {
-  div: {
+  contact: {
     display: 'flex',
     flexDirection: 'column',
-    height: 500,
-    backgroundColor: '#ffe6b3'
-  },
-  projects: {
     flex: 1,
-    backgroundColor: 'yellow',
-    marginLeft: 100 
-  },
-  bottomDiv: {
-    flex: 1,
-    display: 'flex',
+    backgroundColor: 'red',
     alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 15,
-    width: 80,
-    alignSelf: 'center'
   },
   button: {
-    height: '100%',
-    width: '100%',
-    borderRadius: 15
+    marginTop: 30
   },
   quote: {
     display: 'flex',
-    height: 200,
-    backgroundColor: 'brown',
+    height: 150,
+    backgroundColor: '#ffe6b3',
     flexDirection: 'column',
     justifyContent: 'space-around',
-    alignItems: 'center'
+    alignItems: 'center',
+    paddingRight: 100,
+    paddingLeft: 100,
+    paddingTop: 50,
+    paddingBottom: 50
   }
 }
