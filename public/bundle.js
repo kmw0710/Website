@@ -29246,11 +29246,6 @@ var Routes = function (_Component) {
             { style: styles.top },
             _react2.default.createElement(
               'div',
-              { style: { marginLeft: 50 } },
-              _react2.default.createElement('img', { src: 'https://i.imgur.com/WHgPMPV.jpg', style: { height: 90, width: 90, paddingLeft: 30 } })
-            ),
-            _react2.default.createElement(
-              'div',
               { style: { display: 'flex', alignItems: 'center' } },
               _react2.default.createElement(
                 'div',
@@ -29372,7 +29367,11 @@ var styles = {
     display: 'flex',
     backgroundColor: '#ffffff',
     width: 800,
-    alignSelf: 'center'
+    alignSelf: 'center',
+    borderRight: 'solid',
+    borderWidth: 1,
+    borderColor: '#4b4b34',
+    marginRight: 1
   },
   contact: {
     display: 'flex',
@@ -29385,7 +29384,12 @@ var styles = {
   navbar: {
     display: 'flex',
     flexDirection: 'column',
-    flex: 0.6
+    width: 50,
+    borderLeft: 'solid',
+    borderWidth: 1,
+    borderColor: '#4b4b34',
+    paddingLeft: 20,
+    marginLeft: 1
   },
   info: {
     marginLeft: 20,
@@ -29401,6 +29405,7 @@ var styles = {
     backgroundColor: '#4b4b34',
     width: 800,
     alignSelf: 'center'
+
   }
 };
 
@@ -33129,7 +33134,7 @@ var App = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { style: { marginBottom: 50 } },
+        { style: { marginBottom: 20 } },
         this.state.projects.map(function (ele, i) {
           return _react2.default.createElement(_EachProject2.default, { key: i, name: ele, index: i });
         }),
@@ -33142,7 +33147,11 @@ var App = function (_Component) {
             _react2.default.createElement(
               'i',
               null,
-              this.state.author
+              _react2.default.createElement(
+                'b',
+                null,
+                this.state.author
+              )
             )
           ),
           _react2.default.createElement(
@@ -33169,10 +33178,9 @@ var styles = {
     flexDirection: 'column',
     justifyContent: 'space-around',
     alignItems: 'center',
-    paddingRight: 200,
-    paddingLeft: 150,
     paddingTop: 30,
-    paddingBottom: 30
+    paddingBottom: 30,
+    width: 730
   }
 };
 
@@ -51614,7 +51622,7 @@ var EachProject = function (_Component) {
               null,
               _react2.default.createElement(
                 'h2',
-                { style: { textAlign: 'center' } },
+                { style: styles.name },
                 _react2.default.createElement(
                   'i',
                   null,
@@ -51629,29 +51637,49 @@ var EachProject = function (_Component) {
                 'ul',
                 null,
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'IOS/Android mobile application'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'IOS/Android mobile application'
+                  )
                 ),
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Native application using React'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Native application using React-Native'
+                  )
                 ),
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Facebook authentication'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Facebook authentication'
+                  )
                 ),
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Google OAuth2 authentication'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Google OAuth2 authentication'
+                  )
                 ),
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'React-Native, Expo, Express, Node, MySQL, Firebase'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'React-Native, Expo, Express, Node, MySQL, Firebase'
+                  )
                 )
               )
             )
@@ -51663,7 +51691,7 @@ var EachProject = function (_Component) {
               null,
               _react2.default.createElement(
                 'h2',
-                { style: { textAlign: 'center' } },
+                { style: styles.name },
                 _react2.default.createElement(
                   'i',
                   null,
@@ -51678,29 +51706,49 @@ var EachProject = function (_Component) {
                 'ul',
                 null,
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Web browser based application'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Web browser based application'
+                  )
                 ),
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'JavaScript application using React'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'JavaScript application using React'
+                  )
                 ),
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Facebook authentication'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Facebook, Passport authentication'
+                  )
                 ),
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'GoogleMap RESTful API'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'GoogleMap RESTful API'
+                  )
                 ),
                 _react2.default.createElement(
-                  'h4',
-                  null,
-                  'React, Express, Node, MongoDB'
+                  'li',
+                  { style: styles.bullet },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'React, Express, Node, MongoDB, Bootstrap'
+                  )
                 )
               )
             )
@@ -51725,11 +51773,20 @@ var styles = {
   },
   description: {
     height: 300,
-    width: 300
+    width: 300,
+    paddingLeft: 30
   },
   image: {
     height: 300,
     width: '100%'
+  },
+  name: {
+    textAlign: 'center',
+    fontFamily: 'Trebuchet MS'
+  },
+  bullet: {
+    margin: -4,
+    fontFamily: 'Trebuchet MS'
   }
 };
 
@@ -51856,27 +51913,27 @@ var About = function (_Component) {
               'ul',
               null,
               _react2.default.createElement(
-                'h3',
+                'h4',
                 { style: { fontFamily: 'Monaco', color: '#333333' } },
                 'Name: Minwoo Kim'
               ),
               _react2.default.createElement(
-                'h3',
+                'h4',
                 { style: { fontFamily: 'Monaco', color: '#333333' } },
                 'Job: Fullstack software engineer'
               ),
               _react2.default.createElement(
-                'h3',
+                'h4',
                 { style: { fontFamily: 'Monaco', color: '#333333' } },
                 'Phone: (734) 277-2590'
               ),
               _react2.default.createElement(
-                'h3',
+                'h4',
                 { style: { fontFamily: 'Monaco', color: '#333333' } },
                 'E-mail: kminwoo0710@gmail.com'
               ),
               _react2.default.createElement(
-                'h3',
+                'h4',
                 { style: { fontFamily: 'Monaco', color: '#333333' } },
                 'Homepage: http://minwoo.herokuapp.com'
               )
@@ -51887,24 +51944,44 @@ var About = function (_Component) {
           'div',
           { style: { paddingLeft: 30, paddingTop: 30 } },
           _react2.default.createElement(
-            'h3',
+            'h4',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
-            'Proficient: JavaScript, Angular, React, React-Native, ES6, Express, Node.JS, MongoDB, MySQL, Expo, Git, OAuth, HTML5, Flexbox'
+            _react2.default.createElement(
+              'b',
+              { style: { fontSize: 22 } },
+              'Proficient:'
+            ),
+            ' JavaScript, Angular, React, React-Native, ES6, Express, Node.JS, MongoDB, MySQL, Expo, Git, Heroku, OAuth, HTML5, Flexbox'
           ),
           _react2.default.createElement(
-            'h3',
+            'h4',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
-            'Experienced: Backbone, Passport, R, Stata, CSS, HTML, jQuery, FireBase, Sequelize, D3, Knex'
+            _react2.default.createElement(
+              'b',
+              { style: { fontSize: 22 } },
+              'Experienced:'
+            ),
+            ' Backbone, Passport, R, Stata, CSS, HTML, jQuery, FireBase, Sequelize, D3, Knex'
           ),
           _react2.default.createElement(
-            'h3',
+            'h4',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
-            'Education: Bachelor of Science at University of Wisconsin-Madison'
+            _react2.default.createElement(
+              'b',
+              { style: { fontSize: 22 } },
+              'Education:'
+            ),
+            ' Bachelor of Science at University of Wisconsin-Madison'
           ),
           _react2.default.createElement(
-            'h3',
+            'h4',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
-            'Degree: Economics with Mathematical Emphasis'
+            _react2.default.createElement(
+              'b',
+              { style: { fontSize: 22 } },
+              'Degree:'
+            ),
+            ' Economics with Mathematical Emphasis'
           ),
           _react2.default.createElement(
             'h4',
@@ -51969,16 +52046,20 @@ var NaturalHabitat = function (_Component) {
           _react2.default.createElement(
             'i',
             null,
-            'Natural Habitat'
+            _react2.default.createElement(
+              'b',
+              null,
+              'Natural Habitat'
+            )
           )
         ),
         _react2.default.createElement(
           'div',
           { style: styles.summary },
           _react2.default.createElement(
-            'h2',
+            'h3',
             { style: { fontFamily: 'Trebuchet MS', fontSize: 18 } },
-            '\n          My intended goal for this app is to help people build healthier habits based on location.\n          To give easier access to its users, I decided to build it on mobile environment.\n          '
+            '\n          My intended goal for this app is to help people build healthier habits based on location.\n          To give easier access to its users, I decided to build it on mobile environment using React-Native.\n          '
           )
         ),
         _react2.default.createElement(
@@ -52320,7 +52401,7 @@ var styles = {
   },
   description: {
     paddingLeft: 30,
-    width: 350
+    width: 270
   },
   image: {
     height: 500,
@@ -52384,14 +52465,18 @@ var Destination = function (_Component) {
           _react2.default.createElement(
             'i',
             null,
-            'Natural Habitat'
+            _react2.default.createElement(
+              'b',
+              null,
+              'Destination'
+            )
           )
         ),
         _react2.default.createElement(
           'div',
           { style: styles.summary },
           _react2.default.createElement(
-            'h2',
+            'h3',
             { style: { fontFamily: 'Trebuchet MS' } },
             '\n            My intended goal for this app is to provide an application where user is able to customize their travel by location.\n            User can attach events to each location under entire trip.\n          '
           )
@@ -52425,7 +52510,7 @@ var Destination = function (_Component) {
                 _react2.default.createElement(
                   'h4',
                   { style: { fontFamily: 'Trebuchet MS' } },
-                  'Authenticated login/signup with Facebook'
+                  'Authenticated login/signup with Facebook and '
                 )
               )
             )
@@ -52580,14 +52665,12 @@ var styles = {
   row: {
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: 100,
     paddingRight: 100,
     paddingTop: 30
   },
   description: {
-    paddingTop: 120,
-    paddingLeft: 50,
-    borderWidth: 5
+    borderWidth: 5,
+    width: 200
   },
   image: {
     height: 350,

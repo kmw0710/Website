@@ -24,30 +24,30 @@ export default class EachProject extends Component {
           {this.props.index === 0 ? (
             <div style={styles.description}>
               <div>
-                <h2 style={{ textAlign: 'center' }}><i>{this.props.name}</i></h2>
+                <h2 style={styles.name}><i>{this.props.name}</i></h2>
               </div>
               <Link to='/naturalhabitat'>
                 <ul>
-                  <h4>IOS/Android mobile application</h4>
-                  <h4>Native application using React</h4>
-                  <h4>Facebook authentication</h4>
-                  <h4>Google OAuth2 authentication</h4>
-                  <h4>React-Native, Expo, Express, Node, MySQL, Firebase</h4>
+                  <li style={styles.bullet}><p>IOS/Android mobile application</p></li>
+                  <li style={styles.bullet}><p>Native application using React-Native</p></li>
+                  <li style={styles.bullet}><p>Facebook authentication</p></li>
+                  <li style={styles.bullet}><p>Google OAuth2 authentication</p></li>
+                  <li style={styles.bullet}><p>React-Native, Expo, Express, Node, MySQL, Firebase</p></li>
                 </ul>
               </Link>
             </div>
           ) : this.props.index === 1 ? (
             <div style={styles.description}>
               <div>
-                <h2 style={{ textAlign: 'center' }}><i>{this.props.name}</i></h2>
+                <h2 style={styles.name}><i>{this.props.name}</i></h2>
               </div>
               <Link to='/naturalhabitat'>
                 <ul>
-                  <h4>Web browser based application</h4>
-                  <h4>JavaScript application using React</h4>
-                  <h4>Facebook authentication</h4>
-                  <h4>GoogleMap RESTful API</h4>
-                  <h4>React, Express, Node, MongoDB</h4>
+                  <li style={styles.bullet}><p>Web browser based application</p></li>
+                  <li style={styles.bullet}><p>JavaScript application using React</p></li>
+                  <li style={styles.bullet}><p>Facebook, Passport authentication</p></li>
+                  <li style={styles.bullet}><p>GoogleMap RESTful API</p></li>
+                  <li style={styles.bullet}><p>React, Express, Node, MongoDB, Bootstrap</p></li>
                 </ul>
               </Link>
             </div>
@@ -68,10 +68,19 @@ const styles = {
   },
   description: {
     height: 300,
-    width: 300
+    width: 300,
+    paddingLeft: 30
   },
   image: {
     height: 300,
     width: '100%'
+  },
+  name: {
+    textAlign: 'center',
+    fontFamily: 'Trebuchet MS'
+  },
+  bullet: {
+    margin: -4,
+    fontFamily: 'Trebuchet MS'
   }
 }

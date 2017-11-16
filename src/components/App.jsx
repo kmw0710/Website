@@ -33,13 +33,13 @@ export default class App extends Component {
 
   render() {
     return (
-      <div style={{ marginBottom: 50 }}>
+      <div style={{ marginBottom: 20 }}>
         {this.state.projects.map((ele, i) => {
           return <EachProject key={i} name={ele} index={i} />
         })}
         <div style={styles.quote}>
           <h3 style={{ fontFamily: "Courier", color: '#1a3300' }}>
-            <i>{this.state.author}</i>
+            <i><b>{this.state.author}</b></i>
           </h3>
           <h4 style={{ fontFamily: 'Courier', color: '#1a3300', fontSize: 20 }}>
             {this.state.quote}
@@ -58,9 +58,8 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'space-around',
     alignItems: 'center',
-    paddingRight: 200,
-    paddingLeft: 150,
     paddingTop: 30,
-    paddingBottom: 30
+    paddingBottom: 30,
+    width: 730,
   }
 }

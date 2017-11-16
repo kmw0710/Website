@@ -21,9 +21,6 @@ export default class Routes extends Component {
       <Router>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div style={styles.top}>
-          <div style={{ marginLeft: 50 }}>
-            <img src={'https://i.imgur.com/WHgPMPV.jpg'} style={{ height: 90, width: 90, paddingLeft: 30 }} />
-          </div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <div style={styles.info}>
                   <h2 style={{ color: '#fff2e6', marginBottom: 0, fontFamily: 'Trebuchet MS', fontSize: 40 }}>
@@ -92,7 +89,11 @@ const styles = {
     display: 'flex',
     backgroundColor: '#ffffff',
     width: 800,
-    alignSelf: 'center'
+    alignSelf: 'center',
+    borderRight: 'solid',
+    borderWidth: 1,
+    borderColor: '#4b4b34',
+    marginRight: 1
   },
   contact: {
     display: 'flex',
@@ -105,7 +106,12 @@ const styles = {
   navbar: {
     display: 'flex',
     flexDirection: 'column',
-    flex: 0.6,
+    width: 50,
+    borderLeft: 'solid',
+    borderWidth: 1,
+    borderColor: '#4b4b34',
+    paddingLeft: 20,
+    marginLeft: 1
   },
   info: {
     marginLeft: 20,
@@ -120,6 +126,7 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: '#4b4b34',
     width: 800,
-    alignSelf: 'center'
+    alignSelf: 'center',
+
   }
 }

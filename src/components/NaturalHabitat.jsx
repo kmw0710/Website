@@ -4,13 +4,13 @@ export default class NaturalHabitat extends Component {
   render() {
     return (
       <div>
-        <h2 style={{ textAlign: 'center', fontFamily: 'Trebuchet MS' }}><i>Natural Habitat</i></h2>
+        <h2 style={{ textAlign: 'center', fontFamily: 'Trebuchet MS' }}><i><b>Natural Habitat</b></i></h2>
         <div style={styles.summary}>
-          <h2 style={{ fontFamily: 'Trebuchet MS', fontSize: 18 }}>{`
+          <h3 style={{ fontFamily: 'Trebuchet MS', fontSize: 18 }}>{`
           My intended goal for this app is to help people build healthier habits based on location.
-          To give easier access to its users, I decided to build it on mobile environment.
+          To give easier access to its users, I decided to build it on mobile environment using React-Native.
           `}
-          </h2>
+          </h3>
         </div>
         <div style={styles.row}>
           <div>
@@ -111,8 +111,6 @@ export default class NaturalHabitat extends Component {
             </ul>
           </div>
         </div>
-
-
       </div>
     )
   }
@@ -131,7 +129,7 @@ const styles = {
   },
   description: {
     paddingLeft: 30,
-    width: 350
+    width: 270
   },
   image: {
     height: 500,

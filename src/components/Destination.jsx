@@ -4,13 +4,13 @@ export default class Destination extends Component {
   render() {
     return (
       <div>
-        <h2 style={{ textAlign: 'center', fontFamily: 'Trebuchet MS' }}><i>Natural Habitat</i></h2>
+        <h2 style={{ textAlign: 'center', fontFamily: 'Trebuchet MS' }}><i><b>Destination</b></i></h2>
         <div style={styles.summary}>
-          <h2 style={{ fontFamily: 'Trebuchet MS' }}>{`
+          <h3 style={{ fontFamily: 'Trebuchet MS' }}>{`
             My intended goal for this app is to provide an application where user is able to customize their travel by location.
             User can attach events to each location under entire trip.
           `}
-          </h2>
+          </h3>
 
         </div>
 
@@ -21,7 +21,7 @@ export default class Destination extends Component {
           <div style={styles.description}>
             <ul>
               <li><h4 style={{ fontFamily: 'Trebuchet MS' }} style={{ fontFamily: 'Trebuchet MS' }}>Stored user information in MongoDB database with Express-Session</h4></li>
-              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Authenticated login/signup with Facebook</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Authenticated login/signup with Facebook and </h4></li>              
             </ul>
           </div>
         </div>
@@ -86,14 +86,12 @@ const styles = {
   row: {
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: 100,
     paddingRight: 100,
     paddingTop: 30
   },
   description: {
-    paddingTop: 120,
-    paddingLeft: 50,
     borderWidth: 5,
+    width: 200
   },
   image: {
     height: 350,
