@@ -29240,7 +29240,7 @@ var Routes = function (_Component) {
         null,
         _react2.default.createElement(
           'div',
-          { style: { display: 'flex', height: '100%', flexDirection: 'column' } },
+          { style: { display: 'flex', flexDirection: 'column' } },
           _react2.default.createElement(
             'div',
             { style: styles.top },
@@ -29276,7 +29276,7 @@ var Routes = function (_Component) {
               { style: styles.contact },
               _react2.default.createElement(
                 'div',
-                { style: { display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', marginRight: 50 } },
+                { style: { display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', marginRight: 20 } },
                 _react2.default.createElement(
                   'div',
                   { style: { color: '#fff2e6', fontFamily: 'Trebuchet MS' } },
@@ -29364,26 +29364,28 @@ var styles = {
     display: 'flex',
     alignItems: 'center',
     backgroundColor: '#4b4b34',
-    flex: 2
+    flex: 2,
+    width: 800,
+    alignSelf: 'center'
   },
   middle: {
     display: 'flex',
-    backgroundColor: '#ffffff'
+    backgroundColor: '#ffffff',
+    width: 800,
+    alignSelf: 'center'
   },
   contact: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
     marginRight: 50,
-    flex: 1
+    flex: 1,
+    paddingTop: 20
   },
   navbar: {
     display: 'flex',
     flexDirection: 'column',
-    flex: 0.6,
-    backgroundColor: '#ddd',
-    paddingLeft: 30
-
+    flex: 0.6
   },
   info: {
     marginLeft: 20,
@@ -29396,7 +29398,9 @@ var styles = {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#4b4b34'
+    backgroundColor: '#4b4b34',
+    width: 800,
+    alignSelf: 'center'
   }
 };
 
@@ -33126,15 +33130,6 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         { style: { marginBottom: 50 } },
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            'h2',
-            { style: { textAlign: 'center', paddingRight: 150, fontFamily: 'Trebuchet MS' } },
-            'PROJECTS'
-          )
-        ),
         this.state.projects.map(function (ele, i) {
           return _react2.default.createElement(_EachProject2.default, { key: i, name: ele, index: i });
         }),
@@ -51726,11 +51721,9 @@ var styles = {
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#ffffff',
-    marginLeft: 250
+    paddingLeft: 70
   },
   description: {
-    backgroundColor: '#ddd',
-    marginLeft: 100,
     height: 300,
     width: 300
   },
@@ -51847,7 +51840,7 @@ var About = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { style: { display: 'flex', flexDirection: 'column', height: 500, backgroundColor: '#ffffff', paddingTop: 30 } },
+        { style: { display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', paddingTop: 30 } },
         _react2.default.createElement(
           'div',
           { style: { display: 'flex', flexDirection: 'row' } },
@@ -51886,16 +51879,6 @@ var About = function (_Component) {
                 'h3',
                 { style: { fontFamily: 'Monaco', color: '#333333' } },
                 'Homepage: http://minwoo.herokuapp.com'
-              ),
-              _react2.default.createElement(
-                'h3',
-                { style: { fontFamily: 'Monaco', color: '#333333' } },
-                'Education: Bachelor of Science at University of Wisconsin-Madison'
-              ),
-              _react2.default.createElement(
-                'h3',
-                { style: { fontFamily: 'Monaco', color: '#333333' } },
-                'Degree: Economics with Mathematical Emphasis'
               )
             )
           )
@@ -51912,6 +51895,16 @@ var About = function (_Component) {
             'h3',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
             'Experienced: Backbone, Passport, R, Stata, CSS, HTML, jQuery, FireBase, Sequelize, D3, Knex'
+          ),
+          _react2.default.createElement(
+            'h3',
+            { style: { fontFamily: 'Monaco', color: '#333333' } },
+            'Education: Bachelor of Science at University of Wisconsin-Madison'
+          ),
+          _react2.default.createElement(
+            'h3',
+            { style: { fontFamily: 'Monaco', color: '#333333' } },
+            'Degree: Economics with Mathematical Emphasis'
           ),
           _react2.default.createElement(
             'h4',
@@ -52322,14 +52315,12 @@ var styles = {
   row: {
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: 100,
     paddingRight: 100,
     paddingTop: 30
   },
   description: {
-    paddingTop: 140,
-    paddingLeft: 50,
-    borderWidth: 5
+    paddingLeft: 30,
+    width: 350
   },
   image: {
     height: 500,
@@ -52338,10 +52329,10 @@ var styles = {
   summary: {
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: 100,
-    paddingRight: 100,
     paddingTop: 30,
-    paddingBottom: 30
+    paddingBottom: 30,
+    paddingLeft: 30,
+    width: 730
   }
 };
 

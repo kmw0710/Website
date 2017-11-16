@@ -19,7 +19,7 @@ export default class Routes extends Component {
   render() {
     return (
       <Router>
-        <div style={{ display: 'flex', height: '100%', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div style={styles.top}>
           <div style={{ marginLeft: 50 }}>
             <img src={'https://i.imgur.com/WHgPMPV.jpg'} style={{ height: 90, width: 90, paddingLeft: 30 }} />
@@ -35,7 +35,7 @@ export default class Routes extends Component {
               </div>
             </div>
             <div style={styles.contact}>
-              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', marginRight: 50 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', marginRight: 20 }}>
                 <div style={{ color: '#fff2e6', fontFamily: 'Trebuchet MS' }}>
                   (734) 277-2590
                 </div>
@@ -84,26 +84,28 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     backgroundColor: '#4b4b34',
-    flex: 2
+    flex: 2,
+    width: 800,
+    alignSelf: 'center'
   },
   middle: {
     display: 'flex',
-    backgroundColor: '#ffffff'
+    backgroundColor: '#ffffff',
+    width: 800,
+    alignSelf: 'center'
   },
   contact: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
     marginRight: 50,
-    flex: 1
+    flex: 1,
+    paddingTop: 20
   },
   navbar: {
     display: 'flex',
     flexDirection: 'column',
     flex: 0.6,
-    backgroundColor: '#ddd',
-    paddingLeft: 30,
-    
   },
   info: {
     marginLeft: 20,
@@ -116,6 +118,8 @@ const styles = {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#4b4b34' 
+    backgroundColor: '#4b4b34',
+    width: 800,
+    alignSelf: 'center'
   }
 }

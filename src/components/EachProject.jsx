@@ -64,11 +64,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#ffffff',
-    marginLeft: 250,
+    paddingLeft: 70
   },
   description: {
-    backgroundColor: '#ddd',
-    marginLeft: 100,
     height: 300,
     width: 300
   },

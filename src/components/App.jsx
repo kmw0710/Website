@@ -34,11 +34,6 @@ export default class App extends Component {
   render() {
     return (
       <div style={{ marginBottom: 50 }}>
-      <div>
-        <h2 style={{ textAlign: 'center', paddingRight: 150, fontFamily: 'Trebuchet MS' }}>
-          PROJECTS
-          </h2>
-      </div>
         {this.state.projects.map((ele, i) => {
           return <EachProject key={i} name={ele} index={i} />
         })}

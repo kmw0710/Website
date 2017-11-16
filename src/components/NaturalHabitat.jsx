@@ -126,14 +126,12 @@ const styles = {
   row: {
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: 100,
     paddingRight: 100,
     paddingTop: 30
   },
   description: {
-    paddingTop: 140,
-    paddingLeft: 50,
-    borderWidth: 5,
+    paddingLeft: 30,
+    width: 350
   },
   image: {
     height: 500,
@@ -142,9 +140,9 @@ const styles = {
   summary: {
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: 100,
-    paddingRight: 100,
     paddingTop: 30,
-    paddingBottom: 30
+    paddingBottom: 30,
+    paddingLeft: 30,
+    width: 730
   }
 }
