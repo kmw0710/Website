@@ -29235,7 +29235,6 @@ var Routes = function (_Component) {
   _createClass(Routes, [{
     key: 'render',
     value: function render() {
-
       return _react2.default.createElement(
         _reactRouterDom.HashRouter,
         null,
@@ -29309,7 +29308,7 @@ var Routes = function (_Component) {
               { style: styles.navbar },
               _react2.default.createElement(
                 _reactRouterDom.Link,
-                { to: '/', style: styles.button, replace: true },
+                { to: '/', replace: true },
                 _react2.default.createElement(
                   'p',
                   { style: { fontFamily: 'Helvetica' } },
@@ -29318,7 +29317,7 @@ var Routes = function (_Component) {
               ),
               _react2.default.createElement(
                 _reactRouterDom.Link,
-                { to: '/about', style: styles.button, replace: true },
+                { to: '/about', replace: true },
                 _react2.default.createElement(
                   'p',
                   { style: { fontFamily: 'Helvetica' } },
@@ -29383,13 +29382,8 @@ var styles = {
     flexDirection: 'column',
     flex: 0.6,
     backgroundColor: '#ddd',
-    paddingLeft: 30,
-    borderRightWidth: 5,
-    borderRightColor: 'black'
+    paddingLeft: 30
 
-  },
-  button: {
-    marginTop: 30
   },
   info: {
     marginLeft: 20,
@@ -51701,7 +51695,7 @@ var EachProject = function (_Component) {
                 _react2.default.createElement(
                   'h4',
                   null,
-                  'Facebook Authentication'
+                  'Facebook authentication'
                 ),
                 _react2.default.createElement(
                   'h4',
@@ -51891,6 +51885,11 @@ var About = function (_Component) {
               _react2.default.createElement(
                 'h3',
                 { style: { fontFamily: 'Monaco', color: '#333333' } },
+                'Homepage: http://minwoo.herokuapp.com'
+              ),
+              _react2.default.createElement(
+                'h3',
+                { style: { fontFamily: 'Monaco', color: '#333333' } },
                 'Education: Bachelor of Science at University of Wisconsin-Madison'
               ),
               _react2.default.createElement(
@@ -51901,10 +51900,9 @@ var About = function (_Component) {
             )
           )
         ),
-        _react2.default.createElement('div', { style: { height: 5, backgroundColor: 'black' } }),
         _react2.default.createElement(
           'div',
-          { style: { paddingLeft: 30 } },
+          { style: { paddingLeft: 30, paddingTop: 30 } },
           _react2.default.createElement(
             'h3',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
@@ -52329,12 +52327,12 @@ var styles = {
     paddingTop: 30
   },
   description: {
-    paddingTop: 160,
+    paddingTop: 140,
     paddingLeft: 50,
     borderWidth: 5
   },
   image: {
-    height: 400,
+    height: 500,
     width: 400
   },
   summary: {
@@ -52596,13 +52594,13 @@ var styles = {
     paddingTop: 30
   },
   description: {
-    paddingTop: 160,
+    paddingTop: 120,
     paddingLeft: 50,
     borderWidth: 5
   },
   image: {
-    height: 500,
-    width: 400
+    height: 350,
+    width: 500
   },
   summary: {
     display: 'flex',

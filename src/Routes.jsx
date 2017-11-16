@@ -17,7 +17,6 @@ import Destination from './components/Destination.jsx';
 export default class Routes extends Component {
 
   render() {
-
     return (
       <Router>
         <div style={{ display: 'flex', height: '100%', flexDirection: 'column' }}>
@@ -54,10 +53,8 @@ export default class Routes extends Component {
           </div>
           <div style={styles.middle}>
             <div style={styles.navbar}>
-              <Link to='/' style={styles.button} replace><p style={{ fontFamily: 'Helvetica' }}>Home</p></Link>
-              <Link to='/about' style={styles.button} replace><p style={{ fontFamily: 'Helvetica' }}>About</p></Link>
-              {/* <Link to='/projects' style={styles.button} replace>Projects</Link> */}
-              {/* <Link to='/contact' style={styles.button} replace>Contact</Link> */}
+              <Link to='/' replace><p style={{ fontFamily: 'Helvetica' }}>Home</p></Link>
+              <Link to='/about' replace><p style={{ fontFamily: 'Helvetica' }}>About</p></Link>
             </div>
           <div style={{ flex: 8, paddingBottom: 30 }}>
           <Route exact path='/' component={App} />
@@ -106,12 +103,7 @@ const styles = {
     flex: 0.6,
     backgroundColor: '#ddd',
     paddingLeft: 30,
-    borderRightWidth: 5,
-    borderRightColor: 'black',
     
-  },
-  button: {
-    marginTop: 30
   },
   info: {
     marginLeft: 20,

@@ -91,13 +91,13 @@ const styles = {
     paddingTop: 30
   },
   description: {
-    paddingTop: 160,
+    paddingTop: 120,
     paddingLeft: 50,
     borderWidth: 5,
   },
   image: {
-    height: 500,
-    width: 400,
+    height: 350,
+    width: 500,
   },
   summary: {
     display: 'flex',

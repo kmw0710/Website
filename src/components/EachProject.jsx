@@ -45,7 +45,7 @@ export default class EachProject extends Component {
                 <ul>
                   <h4>Web browser based application</h4>
                   <h4>JavaScript application using React</h4>
-                  <h4>Facebook Authentication</h4>
+                  <h4>Facebook authentication</h4>
                   <h4>GoogleMap RESTful API</h4>
                   <h4>React, Express, Node, MongoDB</h4>
                 </ul>
