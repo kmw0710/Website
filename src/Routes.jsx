@@ -23,20 +23,20 @@ export default class Routes extends Component {
           <div style={styles.top}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <div style={styles.info}>
-                  <h2 style={{ color: '#fff2e6', marginBottom: 0, fontFamily: 'Trebuchet MS', fontSize: 40 }}>
+                  <h2 style={{ color: '#000a1a', marginBottom: 0, fontFamily: 'Trebuchet MS', fontSize: 40 }}>
                     Minwoo Kim
                   </h2>
-                  <h4 style={{ color: '#fff2e6', marginTop: 0, fontFamily: 'Trebuchet MS' }}>
+                  <h4 style={{ color: '#000a1a', marginTop: 0, fontFamily: 'Trebuchet MS' }}>
                     <i>Fullstack Software Engineer</i>
                   </h4>
               </div>
             </div>
             <div style={styles.contact}>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', marginRight: 20 }}>
-                <div style={{ color: '#fff2e6', fontFamily: 'Trebuchet MS' }}>
+                <div style={{ color: '#000a1a', fontFamily: 'Trebuchet MS' }}>
                   (734) 277-2590
                 </div>
-                <div style={{ color: '#fff2e6', fontFamily: 'Trebuchet MS' }}>
+                <div style={{ color: '#000a1a', fontFamily: 'Trebuchet MS' }}>
                   kminwoo0710@gmail.com
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default class Routes extends Component {
           </div>
           </div>
           <div style={styles.bottom}>
-            <h4 style={{ color: '#fff2e6', fontFamily: 'Trebuchet MS' }}>
+            <h4 style={{ color: '#000a1a', fontFamily: 'Trebuchet MS' }}>
               Created using React by Minwoo Kim
             </h4>
           </div>
@@ -80,7 +80,7 @@ const styles = {
   top: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#4b4b34',
+    backgroundColor: '#cce0ff',
     flex: 2,
     width: 800,
     alignSelf: 'center'
@@ -92,7 +92,7 @@ const styles = {
     alignSelf: 'center',
     borderRight: 'solid',
     borderWidth: 1,
-    borderColor: '#4b4b34',
+    borderColor: '#cce0ff',
     marginRight: 1
   },
   contact: {
@@ -109,7 +109,7 @@ const styles = {
     width: 50,
     borderLeft: 'solid',
     borderWidth: 1,
-    borderColor: '#4b4b34',
+    borderColor: '#cce0ff',
     paddingLeft: 20,
     marginLeft: 1
   },
@@ -124,7 +124,7 @@ const styles = {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#4b4b34',
+    backgroundColor: '#cce0ff',
     width: 800,
     alignSelf: 'center',
 

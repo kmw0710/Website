@@ -91,11 +91,12 @@ const styles = {
   },
   description: {
     borderWidth: 5,
-    width: 200
+    width: 150,
+    marginTop: 50
   },
   image: {
-    height: 350,
-    width: 500,
+    height: 400,
+    width: 550,
   },
   summary: {
     display: 'flex',

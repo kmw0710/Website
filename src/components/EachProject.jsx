@@ -10,7 +10,7 @@ export default class EachProject extends Component {
             {this.props.index === 0 ? (
               <div style={styles.picture}>
                 <Link to='/naturalhabitat'>
-                  <img src={'https://i.imgur.com/IiFPFqG.png'} style={styles.image} />
+                  <img src={'https://i.imgur.com/84ANUaL.png?1'} style={styles.image} />
                 </Link>
               </div>
             ) : this.props.index === 1 ? (
@@ -23,33 +23,29 @@ export default class EachProject extends Component {
           </div>
           {this.props.index === 0 ? (
             <div style={styles.description}>
-              <div>
-                <h2 style={styles.name}><i>{this.props.name}</i></h2>
-              </div>
               <Link to='/naturalhabitat'>
-                <ul>
-                  <li style={styles.bullet}><p>IOS/Android mobile application</p></li>
-                  <li style={styles.bullet}><p>Native application using React-Native</p></li>
-                  <li style={styles.bullet}><p>Facebook authentication</p></li>
-                  <li style={styles.bullet}><p>Google OAuth2 authentication</p></li>
-                  <li style={styles.bullet}><p>React-Native, Expo, Express, Node, MySQL, Firebase</p></li>
-                </ul>
+                <h2 style={styles.name}><i>{this.props.name}</i></h2>
               </Link>
+              <ul>
+                <li style={styles.bullet}><p>IOS/Android mobile application</p></li>
+                <li style={styles.bullet}><p>Native application using React-Native</p></li>
+                <li style={styles.bullet}><p>Facebook authentication</p></li>
+                <li style={styles.bullet}><p>Google OAuth2 authentication</p></li>
+                <li style={styles.bullet}><p>React-Native, Expo, Express, Node, MySQL, Firebase</p></li>
+              </ul>
             </div>
           ) : this.props.index === 1 ? (
             <div style={styles.description}>
-              <div>
+              <Link to='/destination'>
                 <h2 style={styles.name}><i>{this.props.name}</i></h2>
-              </div>
-              <Link to='/naturalhabitat'>
-                <ul>
-                  <li style={styles.bullet}><p>Web browser based application</p></li>
-                  <li style={styles.bullet}><p>JavaScript application using React</p></li>
-                  <li style={styles.bullet}><p>Facebook, Passport authentication</p></li>
-                  <li style={styles.bullet}><p>GoogleMap RESTful API</p></li>
-                  <li style={styles.bullet}><p>React, Express, Node, MongoDB, Bootstrap</p></li>
-                </ul>
               </Link>
+              <ul>
+                <li style={styles.bullet}><p>Web browser based application</p></li>
+                <li style={styles.bullet}><p>JavaScript application using React</p></li>
+                <li style={styles.bullet}><p>Facebook, Passport authentication</p></li>
+                <li style={styles.bullet}><p>GoogleMap RESTful API</p></li>
+                <li style={styles.bullet}><p>React, Express, Node, MongoDB, Bootstrap</p></li>
+              </ul>
             </div>
           ) : null}
         </div>
@@ -77,10 +73,12 @@ const styles = {
   },
   name: {
     textAlign: 'center',
-    fontFamily: 'Trebuchet MS'
+    fontFamily: 'Trebuchet MS',
+    marginRight: 30
   },
   bullet: {
     margin: -4,
-    fontFamily: 'Trebuchet MS'
+    fontFamily: 'Trebuchet MS',
+    fontSize: 14
   }
 }

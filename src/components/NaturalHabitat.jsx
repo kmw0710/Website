@@ -26,7 +26,7 @@ export default class NaturalHabitat extends Component {
 
         <div style={styles.row}>
           <div>
-            <img src={'https://i.imgur.com/GZ5hePv.png?1'} style={styles.image} />
+            <img src={'https://i.imgur.com/gTaTHgG.png?1'} style={styles.image} />
           </div>
           <div style={styles.description}>
             <ul>
@@ -129,6 +129,7 @@ const styles = {
   },
   description: {
     paddingLeft: 30,
+    marginTop: 50,
     width: 270
   },
   image: {

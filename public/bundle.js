@@ -29252,12 +29252,12 @@ var Routes = function (_Component) {
                 { style: styles.info },
                 _react2.default.createElement(
                   'h2',
-                  { style: { color: '#fff2e6', marginBottom: 0, fontFamily: 'Trebuchet MS', fontSize: 40 } },
+                  { style: { color: '#000a1a', marginBottom: 0, fontFamily: 'Trebuchet MS', fontSize: 40 } },
                   'Minwoo Kim'
                 ),
                 _react2.default.createElement(
                   'h4',
-                  { style: { color: '#fff2e6', marginTop: 0, fontFamily: 'Trebuchet MS' } },
+                  { style: { color: '#000a1a', marginTop: 0, fontFamily: 'Trebuchet MS' } },
                   _react2.default.createElement(
                     'i',
                     null,
@@ -29274,12 +29274,12 @@ var Routes = function (_Component) {
                 { style: { display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', marginRight: 20 } },
                 _react2.default.createElement(
                   'div',
-                  { style: { color: '#fff2e6', fontFamily: 'Trebuchet MS' } },
+                  { style: { color: '#000a1a', fontFamily: 'Trebuchet MS' } },
                   '(734) 277-2590'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { style: { color: '#fff2e6', fontFamily: 'Trebuchet MS' } },
+                  { style: { color: '#000a1a', fontFamily: 'Trebuchet MS' } },
                   'kminwoo0710@gmail.com'
                 )
               ),
@@ -29334,7 +29334,7 @@ var Routes = function (_Component) {
             { style: styles.bottom },
             _react2.default.createElement(
               'h4',
-              { style: { color: '#fff2e6', fontFamily: 'Trebuchet MS' } },
+              { style: { color: '#000a1a', fontFamily: 'Trebuchet MS' } },
               'Created using React by Minwoo Kim'
             )
           )
@@ -29358,7 +29358,7 @@ var styles = {
   top: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#4b4b34',
+    backgroundColor: '#cce0ff',
     flex: 2,
     width: 800,
     alignSelf: 'center'
@@ -29370,7 +29370,7 @@ var styles = {
     alignSelf: 'center',
     borderRight: 'solid',
     borderWidth: 1,
-    borderColor: '#4b4b34',
+    borderColor: '#cce0ff',
     marginRight: 1
   },
   contact: {
@@ -29387,7 +29387,7 @@ var styles = {
     width: 50,
     borderLeft: 'solid',
     borderWidth: 1,
-    borderColor: '#4b4b34',
+    borderColor: '#cce0ff',
     paddingLeft: 20,
     marginLeft: 1
   },
@@ -29402,7 +29402,7 @@ var styles = {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#4b4b34',
+    backgroundColor: '#cce0ff',
     width: 800,
     alignSelf: 'center'
 
@@ -51602,7 +51602,7 @@ var EachProject = function (_Component) {
               _react2.default.createElement(
                 _reactRouterDom.Link,
                 { to: '/naturalhabitat' },
-                _react2.default.createElement('img', { src: 'https://i.imgur.com/IiFPFqG.png', style: styles.image })
+                _react2.default.createElement('img', { src: 'https://i.imgur.com/84ANUaL.png?1', style: styles.image })
               )
             ) : this.props.index === 1 ? _react2.default.createElement(
               'div',
@@ -51618,8 +51618,8 @@ var EachProject = function (_Component) {
             'div',
             { style: styles.description },
             _react2.default.createElement(
-              'div',
-              null,
+              _reactRouterDom.Link,
+              { to: '/naturalhabitat' },
               _react2.default.createElement(
                 'h2',
                 { style: styles.name },
@@ -51631,55 +51631,51 @@ var EachProject = function (_Component) {
               )
             ),
             _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/naturalhabitat' },
+              'ul',
+              null,
               _react2.default.createElement(
-                'ul',
-                null,
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'IOS/Android mobile application'
-                  )
-                ),
+                  'p',
+                  null,
+                  'IOS/Android mobile application'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Native application using React-Native'
-                  )
-                ),
+                  'p',
+                  null,
+                  'Native application using React-Native'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Facebook authentication'
-                  )
-                ),
+                  'p',
+                  null,
+                  'Facebook authentication'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Google OAuth2 authentication'
-                  )
-                ),
+                  'p',
+                  null,
+                  'Google OAuth2 authentication'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'React-Native, Expo, Express, Node, MySQL, Firebase'
-                  )
+                  'p',
+                  null,
+                  'React-Native, Expo, Express, Node, MySQL, Firebase'
                 )
               )
             )
@@ -51687,8 +51683,8 @@ var EachProject = function (_Component) {
             'div',
             { style: styles.description },
             _react2.default.createElement(
-              'div',
-              null,
+              _reactRouterDom.Link,
+              { to: '/destination' },
               _react2.default.createElement(
                 'h2',
                 { style: styles.name },
@@ -51700,55 +51696,51 @@ var EachProject = function (_Component) {
               )
             ),
             _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/naturalhabitat' },
+              'ul',
+              null,
               _react2.default.createElement(
-                'ul',
-                null,
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Web browser based application'
-                  )
-                ),
+                  'p',
+                  null,
+                  'Web browser based application'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'JavaScript application using React'
-                  )
-                ),
+                  'p',
+                  null,
+                  'JavaScript application using React'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Facebook, Passport authentication'
-                  )
-                ),
+                  'p',
+                  null,
+                  'Facebook, Passport authentication'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'GoogleMap RESTful API'
-                  )
-                ),
+                  'p',
+                  null,
+                  'GoogleMap RESTful API'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { style: styles.bullet },
                 _react2.default.createElement(
-                  'li',
-                  { style: styles.bullet },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'React, Express, Node, MongoDB, Bootstrap'
-                  )
+                  'p',
+                  null,
+                  'React, Express, Node, MongoDB, Bootstrap'
                 )
               )
             )
@@ -51782,11 +51774,13 @@ var styles = {
   },
   name: {
     textAlign: 'center',
-    fontFamily: 'Trebuchet MS'
+    fontFamily: 'Trebuchet MS',
+    marginRight: 30
   },
   bullet: {
     margin: -4,
-    fontFamily: 'Trebuchet MS'
+    fontFamily: 'Trebuchet MS',
+    fontSize: 14
   }
 };
 
@@ -52103,7 +52097,7 @@ var NaturalHabitat = function (_Component) {
           _react2.default.createElement(
             'div',
             null,
-            _react2.default.createElement('img', { src: 'https://i.imgur.com/GZ5hePv.png?1', style: styles.image })
+            _react2.default.createElement('img', { src: 'https://i.imgur.com/gTaTHgG.png?1', style: styles.image })
           ),
           _react2.default.createElement(
             'div',
@@ -52401,6 +52395,7 @@ var styles = {
   },
   description: {
     paddingLeft: 30,
+    marginTop: 50,
     width: 270
   },
   image: {
@@ -52670,11 +52665,12 @@ var styles = {
   },
   description: {
     borderWidth: 5,
-    width: 200
+    width: 150,
+    marginTop: 50
   },
   image: {
-    height: 350,
-    width: 500
+    height: 400,
+    width: 550
   },
   summary: {
     display: 'flex',
