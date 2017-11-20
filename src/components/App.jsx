@@ -37,14 +37,14 @@ export default class App extends Component {
         {this.state.projects.map((ele, i) => {
           return <EachProject key={i} name={ele} index={i} />
         })}
-        <div style={styles.quote}>
+        {/* <div style={styles.quote}>
           <h3 style={{ fontFamily: "Courier", color: '#1a3300' }}>
             <i><b>{this.state.author}</b></i>
           </h3>
           <h4 style={{ fontFamily: 'Courier', color: '#1a3300', fontSize: 20 }}>
             {this.state.quote}
           </h4>
-        </div>
+        </div> */}
       </div>
     )
   }

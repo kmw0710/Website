@@ -33137,29 +33137,7 @@ var App = function (_Component) {
         { style: { marginBottom: 20 } },
         this.state.projects.map(function (ele, i) {
           return _react2.default.createElement(_EachProject2.default, { key: i, name: ele, index: i });
-        }),
-        _react2.default.createElement(
-          'div',
-          { style: styles.quote },
-          _react2.default.createElement(
-            'h3',
-            { style: { fontFamily: "Courier", color: '#1a3300' } },
-            _react2.default.createElement(
-              'i',
-              null,
-              _react2.default.createElement(
-                'b',
-                null,
-                this.state.author
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'h4',
-            { style: { fontFamily: 'Courier', color: '#1a3300', fontSize: 20 } },
-            this.state.quote
-          )
-        )
+        })
       );
     }
   }]);
