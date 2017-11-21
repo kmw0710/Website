@@ -51876,7 +51876,7 @@ var About = function (_Component) {
           _react2.default.createElement(
             'div',
             { style: { marginLeft: 50 } },
-            _react2.default.createElement('img', { src: 'https://i.imgur.com/KxoQUii.jpg', style: { height: 300, width: 270 } })
+            _react2.default.createElement('img', { src: 'https://i.imgur.com/pt60rmo.jpg', style: { height: 300, width: 270 } })
           ),
           _react2.default.createElement(
             'div',

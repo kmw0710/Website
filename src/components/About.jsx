@@ -6,7 +6,7 @@ export default class About extends Component {
       <div style={{ display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', paddingTop: 30 }}>
         <div style={{ display: 'flex', flexDirection: 'row' }}>
           <div style={{ marginLeft: 50 }}>
-            <img src={'https://i.imgur.com/KxoQUii.jpg'} style={{ height: 300, width: 270 }} />
+            <img src={'https://i.imgur.com/pt60rmo.jpg'} style={{ height: 300, width: 270 }} />
           </div>
           <div>
             <ul>
