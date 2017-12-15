@@ -4,11 +4,10 @@ export default class NaturalHabitat extends Component {
   render() {
     return (
       <div>
-        <h2 style={{ textAlign: 'center', fontFamily: 'Trebuchet MS' }}><i><b>Natural Habitat</b></i></h2>
+        <h2 style={{ textAlign: 'center', fontFamily: 'Trebuchet MS', marginBottom: 0, marginTop: 30, marginRight: 100 }}><i><b>Natural Habitat</b></i></h2>
         <div style={styles.summary}>
-          <h3 style={{ fontFamily: 'Trebuchet MS', fontSize: 18 }}>{`
-          My intended goal for this app is to help people build healthier habits based on location.
-          To give easier access to its users, I decided to build it on mobile environment using React-Native.
+          <h3 style={{ fontFamily: 'Trebuchet MS', fontSize: 16 }}>{`Natural Habitat is a mobile application, created to empower people to form healthier habits in their daily activities. 
+        Using its automated geolocation detecting feature, it reminds people to accomplish their planned tasks.
           `}
           </h3>
         </div>
@@ -139,9 +138,8 @@ const styles = {
   summary: {
     display: 'flex',
     flexDirection: 'row',
-    paddingTop: 30,
-    paddingBottom: 30,
     paddingLeft: 30,
-    width: 730
+    width: 700,
+    paddingRight: 100,
   }
 }

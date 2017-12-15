@@ -51872,91 +51872,54 @@ var About = function (_Component) {
         { style: { display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', paddingTop: 30 } },
         _react2.default.createElement(
           'div',
-          { style: { display: 'flex', flexDirection: 'row' } },
+          { style: { paddingLeft: 30, marginBottom: 0 } },
           _react2.default.createElement(
-            'div',
-            { style: { marginLeft: 50 } },
-            _react2.default.createElement('img', { src: 'https://i.imgur.com/pt60rmo.jpg', style: { height: 300, width: 270 } })
+            'p',
+            { style: { fontSize: 18, marginTop: 0 } },
+            'Thanks for visiting my webpage. I discovered my love for web development and coding as it challenges to think critically, solve problems through diverse logical algorithms, and infinite possibility to create great things! I am passionate about writing clean, modular and maintainable codes'
           ),
           _react2.default.createElement(
-            'div',
-            null,
-            _react2.default.createElement(
-              'ul',
-              null,
-              _react2.default.createElement(
-                'h4',
-                { style: { fontFamily: 'Monaco', color: '#333333' } },
-                'Name: Minwoo Kim'
-              ),
-              _react2.default.createElement(
-                'h4',
-                { style: { fontFamily: 'Monaco', color: '#333333' } },
-                'Job: Fullstack software engineer'
-              ),
-              _react2.default.createElement(
-                'h4',
-                { style: { fontFamily: 'Monaco', color: '#333333' } },
-                'Phone: (734) 277-2590'
-              ),
-              _react2.default.createElement(
-                'h4',
-                { style: { fontFamily: 'Monaco', color: '#333333' } },
-                'E-mail: kminwoo0710@gmail.com'
-              ),
-              _react2.default.createElement(
-                'h4',
-                { style: { fontFamily: 'Monaco', color: '#333333' } },
-                'Homepage: http://minwoo.herokuapp.com'
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { style: { paddingLeft: 30, paddingTop: 30 } },
-          _react2.default.createElement(
-            'h4',
+            'p',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
             _react2.default.createElement(
               'b',
-              { style: { fontSize: 22 } },
+              { style: { fontSize: 18 } },
               'Proficient:'
             ),
             ' JavaScript, Angular, React, React-Native, ES6, Express, Node.JS, MongoDB, MySQL, Expo, Git, Heroku, OAuth, HTML5, Flexbox'
           ),
           _react2.default.createElement(
-            'h4',
+            'p',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
             _react2.default.createElement(
               'b',
-              { style: { fontSize: 22 } },
+              { style: { fontSize: 18 } },
               'Experienced:'
             ),
             ' Backbone, Passport, R, Stata, CSS, HTML, jQuery, FireBase, Sequelize, D3, Knex'
           ),
           _react2.default.createElement(
-            'h4',
+            'p',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
             _react2.default.createElement(
               'b',
-              { style: { fontSize: 22 } },
+              { style: { fontSize: 18 } },
               'Education:'
             ),
             ' Bachelor of Science at University of Wisconsin-Madison'
           ),
           _react2.default.createElement(
-            'h4',
+            'p',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
             _react2.default.createElement(
               'b',
-              { style: { fontSize: 22 } },
+              { style: { fontSize: 18 } },
               'Degree:'
             ),
             ' Economics with Mathematical Emphasis'
           ),
           _react2.default.createElement(
-            'h4',
+            'p',
             { style: { fontFamily: 'Monaco', color: '#333333' } },
             ' I enjoy solving problems, integrating technologies, and writing code that is clean, modular, and maintainable. I also enjoy working with others, absorbing new ideas, and collectively building great things.'
           )
@@ -52014,7 +51977,7 @@ var NaturalHabitat = function (_Component) {
         null,
         _react2.default.createElement(
           'h2',
-          { style: { textAlign: 'center', fontFamily: 'Trebuchet MS' } },
+          { style: { textAlign: 'center', fontFamily: 'Trebuchet MS', marginBottom: 0, marginTop: 30, marginRight: 100 } },
           _react2.default.createElement(
             'i',
             null,
@@ -52030,8 +51993,8 @@ var NaturalHabitat = function (_Component) {
           { style: styles.summary },
           _react2.default.createElement(
             'h3',
-            { style: { fontFamily: 'Trebuchet MS', fontSize: 18 } },
-            '\n          My intended goal for this app is to help people build healthier habits based on location.\n          To give easier access to its users, I decided to build it on mobile environment using React-Native.\n          '
+            { style: { fontFamily: 'Trebuchet MS', fontSize: 16 } },
+            'Natural Habitat is a mobile application, created to empower people to form healthier habits in their daily activities. \n        Using its automated geolocation detecting feature, it reminds people to accomplish their planned tasks.\n          '
           )
         ),
         _react2.default.createElement(
@@ -52383,10 +52346,9 @@ var styles = {
   summary: {
     display: 'flex',
     flexDirection: 'row',
-    paddingTop: 30,
-    paddingBottom: 30,
     paddingLeft: 30,
-    width: 730
+    width: 700,
+    paddingRight: 100
   }
 };
 
@@ -52408,8 +52370,6 @@ var _react = __webpack_require__(0);
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -52434,7 +52394,7 @@ var Destination = function (_Component) {
         null,
         _react2.default.createElement(
           'h2',
-          { style: { textAlign: 'center', fontFamily: 'Trebuchet MS' } },
+          { style: { textAlign: 'center', fontFamily: 'Trebuchet MS', marginBottom: 0, marginTop: 30, marginRight: 100 } },
           _react2.default.createElement(
             'i',
             null,
@@ -52450,8 +52410,8 @@ var Destination = function (_Component) {
           { style: styles.summary },
           _react2.default.createElement(
             'h3',
-            { style: { fontFamily: 'Trebuchet MS' } },
-            '\n            My intended goal for this app is to provide an application where user is able to customize their travel by location.\n            User can attach events to each location under entire trip.\n          '
+            { style: { fontFamily: 'Trebuchet MS', fontSize: 16 } },
+            'Travel application enabling users to customize each trip schedules according to different times and locations;\n            particularly useful if users traveling to multi-countries as it automatically changes the time when location is selected'
           )
         ),
         _react2.default.createElement(
@@ -52473,7 +52433,7 @@ var Destination = function (_Component) {
                 null,
                 _react2.default.createElement(
                   'h4',
-                  _defineProperty({ style: { fontFamily: 'Trebuchet MS' } }, 'style', { fontFamily: 'Trebuchet MS' }),
+                  { style: { fontFamily: 'Trebuchet MS', marginBottom: 0, marginTop: 0 } },
                   'Stored user information in MongoDB database with Express-Session'
                 )
               ),
@@ -52482,7 +52442,7 @@ var Destination = function (_Component) {
                 null,
                 _react2.default.createElement(
                   'h4',
-                  { style: { fontFamily: 'Trebuchet MS' } },
+                  { style: { fontFamily: 'Trebuchet MS', marginTop: 0 } },
                   'Authenticated login/signup with Facebook and '
                 )
               )
@@ -52508,7 +52468,7 @@ var Destination = function (_Component) {
                 null,
                 _react2.default.createElement(
                   'h4',
-                  { style: { fontFamily: 'Trebuchet MS' } },
+                  { style: { fontFamily: 'Trebuchet MS', marginBottom: 0, marginTop: 0 } },
                   'Called and rendered saved trips from MongoDB database as user is logged in'
                 )
               )
@@ -52534,7 +52494,7 @@ var Destination = function (_Component) {
                 null,
                 _react2.default.createElement(
                   'h4',
-                  { style: { fontFamily: 'Trebuchet MS' } },
+                  { style: { fontFamily: 'Trebuchet MS', marginBottom: 0, marginTop: 0 } },
                   'Integrated GoogleMap API into application for clearer visualization'
                 )
               ),
@@ -52543,7 +52503,7 @@ var Destination = function (_Component) {
                 null,
                 _react2.default.createElement(
                   'h4',
-                  { style: { fontFamily: 'Trebuchet MS' } },
+                  { style: { fontFamily: 'Trebuchet MS', marginTop: 5 } },
                   'Added auto-complete feature through GoogleMap API to find exact address'
                 )
               )
@@ -52569,7 +52529,7 @@ var Destination = function (_Component) {
                 null,
                 _react2.default.createElement(
                   'h4',
-                  { style: { fontFamily: 'Trebuchet MS' } },
+                  { style: { fontFamily: 'Trebuchet MS', marginBottom: 0, marginTop: 0 } },
                   'Dropped and saved multiple pins on GoogleMap to easily visualize the entire travel'
                 )
               ),
@@ -52578,7 +52538,7 @@ var Destination = function (_Component) {
                 null,
                 _react2.default.createElement(
                   'h4',
-                  { style: { fontFamily: 'Trebuchet MS' } },
+                  { style: { fontFamily: 'Trebuchet MS', marginTop: 5 } },
                   'Completed render feature as users might want to see the selected city'
                 )
               )
@@ -52604,7 +52564,7 @@ var Destination = function (_Component) {
                 null,
                 _react2.default.createElement(
                   'h4',
-                  { style: { fontFamily: 'Trebuchet MS' } },
+                  { style: { fontFamily: 'Trebuchet MS', marginBottom: 0, marginTop: 0 } },
                   'Added event feature to each city with foreign key'
                 )
               ),
@@ -52613,7 +52573,7 @@ var Destination = function (_Component) {
                 null,
                 _react2.default.createElement(
                   'h4',
-                  { style: { fontFamily: 'Trebuchet MS' } },
+                  { style: { fontFamily: 'Trebuchet MS', marginTop: 5 } },
                   'Implemented algorithm to filter all the events in each city by start time'
                 )
               )
@@ -52637,26 +52597,26 @@ var styles = {
   },
   row: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     paddingRight: 100,
-    paddingTop: 30
+    paddingTop: 5
   },
   description: {
     borderWidth: 5,
-    width: 150,
-    marginTop: 50
+    width: 600,
+    marginTop: 0
   },
   image: {
     height: 400,
-    width: 550
+    width: 700,
+    paddingTop: 30
   },
   summary: {
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: 100,
+    paddingLeft: 40,
     paddingRight: 100,
-    paddingTop: 30,
-    paddingBottom: 30
+    width: 700
   }
 };
 
