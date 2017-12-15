@@ -89,7 +89,7 @@ const styles = {
   },
   description: {
     borderWidth: 5,
-    width: 600,
+    width: 675,
     marginTop: 0
   },
   image: {
