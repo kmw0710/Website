@@ -77,6 +77,21 @@ export default class NaturalHabitat extends Component {
 
         <div style={styles.row}>
           <div>
+            <img src={'https://i.imgur.com/tcMdlLP.png'} style={styles.image} />
+          </div>
+          <div style={styles.description}>
+            <ul>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Inserted hand-drawn clock images to show each starting time</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Implemented dynamic animation through remaining percentage of each task</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Added clickable gift feature through Facebook contact information, which can become random organism</h4></li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div style={styles.row}>
+          <div>
             <img src={'https://i.imgur.com/EBagTuI.png?1'} style={styles.image} />
           </div>
           <div style={styles.description}>
@@ -101,6 +116,19 @@ export default class NaturalHabitat extends Component {
 
         <div style={styles.row}>
           <div>
+            <img src={'https://i.imgur.com/kEgmXBX.png'} style={styles.image} />
+          </div>
+          <div style={styles.description}>
+            <ul>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Checked the database to see whether each task is imported</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Allowed a user to select specific location and category</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Allowed a user not to import specific task</h4></li>
+            </ul>
+          </div>
+        </div>
+
+        <div style={styles.row}>
+          <div>
             <img src={'https://i.imgur.com/VPl1Ac8.png?1'} style={styles.image} />
           </div>
           <div style={styles.description}>
@@ -110,10 +138,25 @@ export default class NaturalHabitat extends Component {
             </ul>
           </div>
         </div>
+
+        <div style={styles.row}>
+          <div>
+            <img src={'https://i.imgur.com/rQvyJw4.png'} style={styles.image} />
+          </div>
+          <div style={styles.description}>
+            <ul>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Allowed a user to observe other user's selected locations and completion points through Facebook contact</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Imported Facebook profile picture to show each user's profile</h4></li>
+            </ul>
+          </div>
+        </div>
       </div>
+      
     )
   }
 }
+
+
 
 const styles = {
   div: {

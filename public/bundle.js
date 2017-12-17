@@ -52214,6 +52214,50 @@ var NaturalHabitat = function (_Component) {
           _react2.default.createElement(
             'div',
             null,
+            _react2.default.createElement('img', { src: 'https://i.imgur.com/tcMdlLP.png', style: styles.image })
+          ),
+          _react2.default.createElement(
+            'div',
+            { style: styles.description },
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'h4',
+                  { style: { fontFamily: 'Trebuchet MS' } },
+                  'Inserted hand-drawn clock images to show each starting time'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'h4',
+                  { style: { fontFamily: 'Trebuchet MS' } },
+                  'Implemented dynamic animation through remaining percentage of each task'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'h4',
+                  { style: { fontFamily: 'Trebuchet MS' } },
+                  'Added clickable gift feature through Facebook contact information, which can become random organism'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { style: styles.row },
+          _react2.default.createElement(
+            'div',
+            null,
             _react2.default.createElement('img', { src: 'https://i.imgur.com/EBagTuI.png?1', style: styles.image })
           ),
           _react2.default.createElement(
@@ -52284,6 +52328,50 @@ var NaturalHabitat = function (_Component) {
           _react2.default.createElement(
             'div',
             null,
+            _react2.default.createElement('img', { src: 'https://i.imgur.com/kEgmXBX.png', style: styles.image })
+          ),
+          _react2.default.createElement(
+            'div',
+            { style: styles.description },
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'h4',
+                  { style: { fontFamily: 'Trebuchet MS' } },
+                  'Checked the database to see whether each task is imported'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'h4',
+                  { style: { fontFamily: 'Trebuchet MS' } },
+                  'Allowed a user to select specific location and category'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'h4',
+                  { style: { fontFamily: 'Trebuchet MS' } },
+                  'Allowed a user not to import specific task'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { style: styles.row },
+          _react2.default.createElement(
+            'div',
+            null,
             _react2.default.createElement('img', { src: 'https://i.imgur.com/VPl1Ac8.png?1', style: styles.image })
           ),
           _react2.default.createElement(
@@ -52308,6 +52396,41 @@ var NaturalHabitat = function (_Component) {
                   'h4',
                   { style: { fontFamily: 'Trebuchet MS' } },
                   'Allowed a user to set the timer in order to lock the mobile device'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { style: styles.row },
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement('img', { src: 'https://i.imgur.com/rQvyJw4.png', style: styles.image })
+          ),
+          _react2.default.createElement(
+            'div',
+            { style: styles.description },
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'h4',
+                  { style: { fontFamily: 'Trebuchet MS' } },
+                  'Allowed a user to observe other user\'s selected locations and completion points through Facebook contact'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'h4',
+                  { style: { fontFamily: 'Trebuchet MS' } },
+                  'Imported Facebook profile picture to show each user\'s profile'
                 )
               )
             )
