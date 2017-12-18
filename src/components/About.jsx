@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class About extends Component {
   render() {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', paddingTop: 30 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', paddingTop: 80 }}>
         <div style={{ paddingLeft: 30, marginBottom: 0 }}>
           <p style={{ fontSize: 18, marginTop: 0 }} >Thanks for visiting my webpage.
 I discovered my love for web development and coding as it challenges to think critically, 

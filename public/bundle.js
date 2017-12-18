@@ -51870,7 +51870,7 @@ var About = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { style: { display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', paddingTop: 30 } },
+        { style: { display: 'flex', flexDirection: 'column', backgroundColor: '#ffffff', paddingTop: 80 } },
         _react2.default.createElement(
           'div',
           { style: { paddingLeft: 30, marginBottom: 0 } },
