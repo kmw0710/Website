@@ -81,9 +81,9 @@ export default class NaturalHabitat extends Component {
           </div>
           <div style={styles.description}>
             <ul>
-              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Inserted hand-drawn clock images to show each starting time</h4></li>
-              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Implemented dynamic animation through remaining percentage of each task</h4></li>
-              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Added clickable gift feature through Facebook contact information, which can become random organism</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Inserted hand-drawn clock images to show each task's starting time</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Implemented dynamic animation for the remaining percentage of each task</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Added clickable gift feature through Facebook contact information, which can turn into random organism</h4></li>
             </ul>
           </div>
         </div>
@@ -108,8 +108,7 @@ export default class NaturalHabitat extends Component {
           <div style={styles.description}>
             <ul>
               <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Integrated with Google Calender to import user's task/schedule into the application</h4></li>
-              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Generated pop-up using Expo to ask user's permission</h4></li>
-              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Authenticated user's personal information with Google OAuth2 to allow user's permission</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Authenticated user's personal information with OAuth2 to allow user's permission</h4></li>
             </ul>
           </div>
         </div>
@@ -120,7 +119,7 @@ export default class NaturalHabitat extends Component {
           </div>
           <div style={styles.description}>
             <ul>
-              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Checked the database to see whether each task is imported</h4></li>
+              <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Checked the database to see whether each task has been imported</h4></li>
               <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Allowed a user to select specific location and category</h4></li>
               <li><h4 style={{ fontFamily: 'Trebuchet MS' }}>Allowed a user not to import specific task</h4></li>
             </ul>
@@ -177,6 +176,7 @@ const styles = {
   image: {
     height: 500,
     width: 400,
+    paddingLeft: 30
   },
   summary: {
     display: 'flex',

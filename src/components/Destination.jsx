@@ -90,12 +90,14 @@ const styles = {
   description: {
     borderWidth: 5,
     width: 675,
-    marginTop: 0
+    marginTop: 0,
+    paddingLeft: 10
   },
   image: {
     height: 400,
     width: 700,
-    paddingTop: 30
+    paddingTop: 30,
+    paddingLeft: 30
   },
   summary: {
     display: 'flex',

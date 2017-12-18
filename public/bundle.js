@@ -29252,16 +29252,16 @@ var Routes = function (_Component) {
                 { style: styles.info },
                 _react2.default.createElement(
                   'h2',
-                  { style: { color: '#000a1a', marginBottom: 0, fontFamily: 'Trebuchet MS', fontSize: 40 } },
+                  { style: { color: '#000a1a', marginBottom: 0, fontFamily: 'Helvetica', fontSize: 32 } },
                   'Minwoo Kim'
                 ),
                 _react2.default.createElement(
                   'h4',
-                  { style: { color: '#000a1a', marginTop: 0, fontFamily: 'Trebuchet MS' } },
+                  { style: { color: '#000a1a', marginTop: 0, fontFamily: 'Helvetica', fontSize: 16 } },
                   _react2.default.createElement(
                     'i',
                     null,
-                    'Fullstack Software Engineer'
+                    'JavaScript Software Engineer'
                   )
                 )
               )
@@ -29274,12 +29274,12 @@ var Routes = function (_Component) {
                 { style: { display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', marginRight: 20 } },
                 _react2.default.createElement(
                   'div',
-                  { style: { color: '#000a1a', fontFamily: 'Trebuchet MS' } },
+                  { style: { color: '#000a1a', fontFamily: 'Helvetica', fontSize: 12 } },
                   '(734) 277-2590'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { style: { color: '#000a1a', fontFamily: 'Trebuchet MS' } },
+                  { style: { color: '#000a1a', fontFamily: 'Helvetica', fontSize: 12 } },
                   'kminwoo0710@gmail.com'
                 )
               ),
@@ -29334,7 +29334,7 @@ var Routes = function (_Component) {
             { style: styles.bottom },
             _react2.default.createElement(
               'h4',
-              { style: { color: '#000a1a', fontFamily: 'Trebuchet MS' } },
+              { style: { color: '#000a1a', fontFamily: 'Helvetica' } },
               'Created using React by Minwoo Kim'
             )
           )
@@ -29351,13 +29351,14 @@ exports.default = Routes;
 
 var styles = {
   image: {
-    width: 40,
-    height: 40,
-    marginLeft: 10
+    width: 25,
+    height: 25,
+    marginLeft: 5,
+    marginBottom: 0,
+    backgroundColor: 'red'
   },
   top: {
     display: 'flex',
-    alignItems: 'center',
     backgroundColor: '#cce0ff',
     flex: 2,
     width: 800,
@@ -29375,11 +29376,11 @@ var styles = {
   },
   contact: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'flex-end',
     marginRight: 50,
     flex: 1,
-    paddingTop: 20
+    marginBottom: 20
   },
   navbar: {
     display: 'flex',
@@ -51880,27 +51881,27 @@ var About = function (_Component) {
           ),
           _react2.default.createElement(
             'p',
-            { style: { fontFamily: 'Monaco', color: '#333333' } },
+            { style: { fontFamily: 'Helvetica', color: '#333333' } },
             _react2.default.createElement(
               'b',
               { style: { fontSize: 18 } },
               'Proficient:'
             ),
-            ' JavaScript, Angular, React, React-Native, ES6, Express, Node.JS, MongoDB, MySQL, Expo, Git, Heroku, OAuth, HTML5, Flexbox'
+            ' JavaScript, Angular, React, React-Native, ES6, Express, Node.JS, MongoDB, MySQL, Expo, jQuery, Git, Heroku, OAuth, CSS, Flexbox'
           ),
           _react2.default.createElement(
             'p',
-            { style: { fontFamily: 'Monaco', color: '#333333' } },
+            { style: { fontFamily: 'Helvetica', color: '#333333' } },
             _react2.default.createElement(
               'b',
               { style: { fontSize: 18 } },
               'Experienced:'
             ),
-            ' Backbone, Passport, R, Stata, CSS, HTML, jQuery, FireBase, Sequelize, D3, Knex'
+            ' Backbone, Passport, R, Stata, CSS, Firebase, Sequelize, D3, Knex'
           ),
           _react2.default.createElement(
             'p',
-            { style: { fontFamily: 'Monaco', color: '#333333' } },
+            { style: { fontFamily: 'Helvetica', color: '#333333' } },
             _react2.default.createElement(
               'b',
               { style: { fontSize: 18 } },
@@ -51910,18 +51911,13 @@ var About = function (_Component) {
           ),
           _react2.default.createElement(
             'p',
-            { style: { fontFamily: 'Monaco', color: '#333333' } },
+            { style: { fontFamily: 'Helvetica', color: '#333333' } },
             _react2.default.createElement(
               'b',
               { style: { fontSize: 18 } },
               'Degree:'
             ),
             ' Economics with Mathematical Emphasis'
-          ),
-          _react2.default.createElement(
-            'p',
-            { style: { fontFamily: 'Monaco', color: '#333333' } },
-            ' I enjoy solving problems, integrating technologies, and writing code that is clean, modular, and maintainable. I also enjoy working with others, absorbing new ideas, and collectively building great things.'
           )
         )
       );
@@ -52228,7 +52224,7 @@ var NaturalHabitat = function (_Component) {
                 _react2.default.createElement(
                   'h4',
                   { style: { fontFamily: 'Trebuchet MS' } },
-                  'Inserted hand-drawn clock images to show each starting time'
+                  'Inserted hand-drawn clock images to show each task\'s starting time'
                 )
               ),
               _react2.default.createElement(
@@ -52237,7 +52233,7 @@ var NaturalHabitat = function (_Component) {
                 _react2.default.createElement(
                   'h4',
                   { style: { fontFamily: 'Trebuchet MS' } },
-                  'Implemented dynamic animation through remaining percentage of each task'
+                  'Implemented dynamic animation for the remaining percentage of each task'
                 )
               ),
               _react2.default.createElement(
@@ -52246,7 +52242,7 @@ var NaturalHabitat = function (_Component) {
                 _react2.default.createElement(
                   'h4',
                   { style: { fontFamily: 'Trebuchet MS' } },
-                  'Added clickable gift feature through Facebook contact information, which can become random organism'
+                  'Added clickable gift feature through Facebook contact information, which can turn into random organism'
                 )
               )
             )
@@ -52307,16 +52303,7 @@ var NaturalHabitat = function (_Component) {
                 _react2.default.createElement(
                   'h4',
                   { style: { fontFamily: 'Trebuchet MS' } },
-                  'Generated pop-up using Expo to ask user\'s permission'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'h4',
-                  { style: { fontFamily: 'Trebuchet MS' } },
-                  'Authenticated user\'s personal information with Google OAuth2 to allow user\'s permission'
+                  'Authenticated user\'s personal information with OAuth2 to allow user\'s permission'
                 )
               )
             )
@@ -52342,7 +52329,7 @@ var NaturalHabitat = function (_Component) {
                 _react2.default.createElement(
                   'h4',
                   { style: { fontFamily: 'Trebuchet MS' } },
-                  'Checked the database to see whether each task is imported'
+                  'Checked the database to see whether each task has been imported'
                 )
               ),
               _react2.default.createElement(
@@ -52464,7 +52451,8 @@ var styles = {
   },
   image: {
     height: 500,
-    width: 400
+    width: 400,
+    paddingLeft: 30
   },
   summary: {
     display: 'flex',
@@ -52727,12 +52715,14 @@ var styles = {
   description: {
     borderWidth: 5,
     width: 675,
-    marginTop: 0
+    marginTop: 0,
+    paddingLeft: 10
   },
   image: {
     height: 400,
     width: 700,
-    paddingTop: 30
+    paddingTop: 30,
+    paddingLeft: 30
   },
   summary: {
     display: 'flex',

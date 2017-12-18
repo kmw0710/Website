@@ -23,26 +23,26 @@ export default class Routes extends Component {
           <div style={styles.top}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <div style={styles.info}>
-                  <h2 style={{ color: '#000a1a', marginBottom: 0, fontFamily: 'Trebuchet MS', fontSize: 40 }}>
+                  <h2 style={{ color: '#000a1a', marginBottom: 0, fontFamily: 'Helvetica', fontSize: 32 }}>
                     Minwoo Kim
                   </h2>
-                  <h4 style={{ color: '#000a1a', marginTop: 0, fontFamily: 'Trebuchet MS' }}>
-                    <i>Fullstack Software Engineer</i>
+                  <h4 style={{ color: '#000a1a', marginTop: 0, fontFamily: 'Helvetica', fontSize: 16 }}>
+                    <i>JavaScript Software Engineer</i>
                   </h4>
               </div>
             </div>
             <div style={styles.contact}>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', marginRight: 20 }}>
-                <div style={{ color: '#000a1a', fontFamily: 'Trebuchet MS' }}>
+                <div style={{ color: '#000a1a', fontFamily: 'Helvetica', fontSize: 12 }}>
                   (734) 277-2590
                 </div>
-                <div style={{ color: '#000a1a', fontFamily: 'Trebuchet MS' }}>
+                <div style={{ color: '#000a1a', fontFamily: 'Helvetica', fontSize: 12 }}>
                   kminwoo0710@gmail.com
                 </div>
               </div>
               <a href='http://linkedin.com/in/kminwoo'>
                 <img style={styles.image} src={'https://i.imgur.com/F5Eqch4.png'} />
-              </a>
+              </a>            
               <a href="https://github.com/kmw0710?tab=repositories">
                 <img style={styles.image} src={'https://i.imgur.com/7v0TbcI.png'} />
               </a>
@@ -61,7 +61,7 @@ export default class Routes extends Component {
           </div>
           </div>
           <div style={styles.bottom}>
-            <h4 style={{ color: '#000a1a', fontFamily: 'Trebuchet MS' }}>
+            <h4 style={{ color: '#000a1a', fontFamily: 'Helvetica' }}>
               Created using React by Minwoo Kim
             </h4>
           </div>
@@ -73,17 +73,18 @@ export default class Routes extends Component {
 
 const styles = {
   image: {
-    width: 40,
-    height: 40,
-    marginLeft: 10
+    width: 25,
+    height: 25,
+    marginLeft: 5,
+    marginBottom: 0,
+    backgroundColor: 'red'
   },
   top: {
     display: 'flex',
-    alignItems: 'center',
     backgroundColor: '#cce0ff',
     flex: 2,
     width: 800,
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   middle: {
     display: 'flex',
@@ -97,11 +98,11 @@ const styles = {
   },
   contact: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'flex-end',
     marginRight: 50,
     flex: 1,
-    paddingTop: 20
+    marginBottom: 20
   },
   navbar: {
     display: 'flex',
@@ -117,7 +118,7 @@ const styles = {
     marginLeft: 20,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
   },
   bottom: {
     display: 'flex',
