@@ -8,7 +8,6 @@ import {
 // const history = createBrowserHistory();
 
 import App from './components/App.jsx';
-import Contact from './components/Contact.jsx';
 import About from './components/About.jsx';
 import NaturalHabitat from './components/NaturalHabitat.jsx';
 import Destination from './components/Destination.jsx';
@@ -23,10 +22,10 @@ export default class Routes extends Component {
           <div style={styles.top}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <div style={styles.info}>
-                  <h2 style={{ color: '#000a1a', marginBottom: 0, fontFamily: 'Helvetica', fontSize: 32 }}>
+                  <h2 style={{ color: '#000a1a', marginBottom: 0, marginTop: 15, fontFamily: 'Helvetica', fontSize: 40 }}>
                     Minwoo Kim
                   </h2>
-                  <h4 style={{ color: '#000a1a', marginTop: 0, fontFamily: 'Helvetica', fontSize: 16 }}>
+                  <h4 style={{ color: '#000a1a', marginTop: 0, fontFamily: 'Helvetica', fontSize: 14 }}>
                     <i>JavaScript Software Engineer</i>
                   </h4>
               </div>
@@ -82,9 +81,11 @@ const styles = {
   top: {
     display: 'flex',
     backgroundColor: '#cce0ff',
-    flex: 2,
+    height: 85,
     width: 800,
     alignSelf: 'center',
+    marginTop: 0,
+    marginBottom: 0,
   },
   middle: {
     display: 'flex',
@@ -116,9 +117,7 @@ const styles = {
   },
   info: {
     marginLeft: 20,
-    display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-around',
   },
   bottom: {
     display: 'flex',
